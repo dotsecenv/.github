@@ -1,0 +1,48 @@
+# dotsecenv
+
+Manages encrypted secrets in your repositories, so you don't have to worry about accidentally leaking credentials!
+
+### `dotsecenv` solves this problem:
+
+```shell
+echo "AWS_SECRET_ACCESS_KEY=your-secret-key" > .env
+git add -A
+git commit -m "..."
+git push
+# 😱 You've just leaked your credentials!
+```
+
+## Installation
+
+#### Mise (universal)
+
+```bash
+mise use ubi:dotsecenv/dotsecenv
+```
+
+### MacOS/Homebrew
+
+```bash
+brew install dotsecenv
+```
+
+### Linux package managers
+
+Package repositories for Debian/Ubuntu, RHEL/CentOS/Fedora, and Arch Linux are available at [get.dotsecenv.com](https://get.dotsecenv.com).
+
+## How it works
+
+`dotsecenv` uses GPG encryption to secure environment secrets within your repositories, eliminating the risk of plaintext leakages while maintaining the convenience of familiar `.env` files.
+
+We aim to create a seamless security layer for your shell environment through:
+
+- `dotsecenv` CLI: An intuitive command-line interface for managing encrypted secrets.
+- **Shell Autocompletion**: Built-in autocompletion support for Bash, Zsh, and Fish
+- `direnv`-like integration: conveniently decrypt and inject secrets directly into environment variables, on-demand.
+
+## Core Features
+
+- **GitOps friendly**: Stores secrets in encrypted _vault_ files that are safe to commit to version control systems.
+- **GPG-based security**: Leverages standard GPG keys for encryption, decryption, and identity management.
+- **Compliance**: Enforce FIPS 140-3 compliant algorithms and strict validation modes for certified security guarantees.
+- **Collaboration**: Enables granular access control, allowing you to securely share secret material with users using their GPG public keys.
