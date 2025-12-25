@@ -17,7 +17,7 @@ git push
 ### Mise (universal)
 
 ```bash
-mise use ubi:dotsecenv/dotsecenv
+mise use github:dotsecenv/dotsecenv
 ```
 
 ### MacOS/Homebrew
@@ -37,11 +37,15 @@ are available for `zsh`, `bash`, and `fish`.
 
 For example, given a `/path/to/project/.secenv` file, e.g.:
 
+For example, given a `/path/to/project/.secenv` file, e.g.:
+
 ```env
-MY_SECRET={dotsecenv/my:secret}
+A_SECRET={dotsecenv}
+ANOTHER_SECRET={dotsecenv/SOME_OTHER_KEY}
+MY_NAMESPACED_SECRET={dotsecenv/my::SECRET}
 ```
 
-`MY_SECRET` will be available as an environment variable, when cd-ing into `/path/to/project/`.
+The three keys will be available as environment variables, when cd-ing into `/path/to/project/`.
 
 #### Install shell plugins
 
