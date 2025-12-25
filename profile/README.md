@@ -14,7 +14,7 @@ git push
 
 ## Installation
 
-#### Mise (universal)
+### Mise (universal)
 
 ```bash
 mise use ubi:dotsecenv/dotsecenv
@@ -29,6 +29,29 @@ brew install dotsecenv
 ### Linux package managers
 
 Package repositories for Debian/Ubuntu, RHEL/CentOS/Fedora, and Arch Linux are available at [get.dotsecenv.com](https://get.dotsecenv.com).
+
+### Shell Plugins
+
+Shell plugins that automatically load `.env` and `.secenv` files when entering directories
+are available for `zsh`, `bash`, and `fish`.
+
+For example, given a `/path/to/project/.secenv` file, e.g.:
+
+```env
+MY_SECRET={dotsecenv/my:secret}
+```
+
+`MY_SECRET` will be available as an environment variable, when cd-ing into `/path/to/project/`.
+
+#### Install shell plugins
+
+You can install zsh/bash/fish plugins with:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/dotsecenv/plugin/main/install.sh | bash
+```
+
+For plugin manager installation and additional details, see [github.com/dotsecenv/plugin#installation](https://github.com/dotsecenv/plugin#installation).
 
 ## How it works
 
