@@ -71,5 +71,5 @@ We aim to create a seamless security layer for your shell environment through:
 
 - **GitOps friendly**: Stores secrets in encrypted _vault_ files that are safe to commit to version control systems.
 - **GPG-based security**: Leverages standard GPG keys for encryption, decryption, and identity management.
-- **Compliance**: Enforce FIPS 140-3 compliant algorithms and strict validation modes for certified security guarantees.
+- **Compliance**: FIPS 186-5 compliant algorithm defaults (RSA 2048+, ECC P-384+, EdDSA) with strict validation modes.
 - **Collaboration**: Enables granular access control, allowing you to securely share secret material with users using their GPG public keys.
