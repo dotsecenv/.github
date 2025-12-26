@@ -37,8 +37,6 @@ are available for `zsh`, `bash`, and `fish`.
 
 For example, given a `/path/to/project/.secenv` file, e.g.:
 
-For example, given a `/path/to/project/.secenv` file, e.g.:
-
 ```env
 A_SECRET={dotsecenv}
 ANOTHER_SECRET={dotsecenv/SOME_OTHER_KEY}
