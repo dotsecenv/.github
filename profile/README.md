@@ -10,7 +10,7 @@
 
 Manages encrypted secrets in your repositories, so you don't have to worry about accidentally leaking credentials!
 
-📦 [View Releases](https://github.com/dotsecenv/dotsecenv/releases) · 🐧 [Get Packages](https://get.dotsecenv.com)
+📦 [View Releases](https://github.com/dotsecenv/dotsecenv/releases) · 🐧 [Get Packages](https://get.dotsecenv.com) · 🌐 [Learn more](https://dotsecenv.com)
 
 ## `dotsecenv` solves the following problem
 
