@@ -1,4 +1,4 @@
-# dotsecenv
+# dotsecenv: safe environment secrets
 
 [![CI](https://github.com/dotsecenv/dotsecenv/actions/workflows/ci.yml/badge.svg)](https://github.com/dotsecenv/dotsecenv/actions/workflows/ci.yml)
 [![Release](https://github.com/dotsecenv/dotsecenv/actions/workflows/release.yml/badge.svg)](https://github.com/dotsecenv/dotsecenv/actions/workflows/release.yml)
@@ -10,7 +10,9 @@
 
 Manages encrypted secrets in your repositories, so you don't have to worry about accidentally leaking credentials!
 
-### `dotsecenv` solves this problem:
+📦 [View Releases](https://github.com/dotsecenv/dotsecenv/releases) · 🐧 [Get Packages](https://get.dotsecenv.com)
+
+## `dotsecenv` solves the following problem
 
 ```shell
 echo "AWS_SECRET_ACCESS_KEY=your-secret-key" > .env
