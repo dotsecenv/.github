@@ -33,6 +33,7 @@ mise use github:dotsecenv/dotsecenv
 ### MacOS/Homebrew
 
 ```bash
+brew tap dotsecenv/tap
 brew install dotsecenv
 ```
 
