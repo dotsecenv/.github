@@ -2,6 +2,14 @@
 
 Manages encrypted secrets in your repositories, so you don't have to worry about accidentally leaking credentials!
 
+### Install
+
+```bash
+curl -fsSL https://get.dotsecenv.com/install.sh | bash
+```
+
+See [github.com/dotsecenv/dotsecenv](https://github.com/dotsecenv/dotsecenv#install-script-recommended) for all installation options.
+
 ### `dotsecenv` solves this problem:
 
 ```shell
