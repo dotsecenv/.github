@@ -7,8 +7,7 @@
   "minimumReleaseAge": "3 days",
   "internalChecksFilter": "strict",
   "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": ["before 5am on monday"]
+    "enabled": false
   },
   "vulnerabilityAlerts": {
     "enabled": true,
@@ -17,15 +16,6 @@
   "osvVulnerabilityAlerts": true,
   "dependencyDashboardOSVVulnerabilitySummary": "unresolved",
   "packageRules": [
-    {
-      "description": "Minimum Release Age cannot be enforced for lockFileMaintenance on non-npm ecosystems — the package manager controls version resolution",
-      "matchDatasources": ["!npm"],
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "minimumReleaseAge": null,
-      "prBodyNotes": [
-        "⚠️ Renovate's lockFileMaintenance does not validate Minimum Release Age — the package manager performs the version resolution. Review fresh transitive updates manually."
-      ]
-    },
     {
       "description": "Minimum Release Age cannot be enforced for package replacements on non-npm ecosystems",
       "matchDatasources": ["!npm"],
